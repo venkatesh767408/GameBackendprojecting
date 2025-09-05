@@ -12,7 +12,7 @@ app.use(cors(
     credentials: true,
   }
 ));
-connectDB();
+await connectDB();
 
 app.use(express.json());
 app.use("/api", userRoutes);
